@@ -25,7 +25,7 @@ public class SelectionSort {
 
     /**
      * Sorts an int array using selection sort (Low to high).
-     * @param arr
+     * @param arr int array wanted to be sorted
      */
     public static void selectionSort(int[] arr) {
         //Iterate through entire array
@@ -52,8 +52,8 @@ public class SelectionSort {
 
     /**
      * Sorts an int array using selection sort (Low to high).
-     * Prints it broken up.
-     * @param arr
+     * Prints what it is doing
+     * @param arr int array wanted to be sorted
      */
     public static void selectionSortPrinted(int[] arr) {
         //Iterate through entire array
