@@ -12,13 +12,13 @@ public class SelectionSort {
         System.out.println();
 
         //Call selection sort method
-        int[] sortedArr = selectionSort(arr);
-        //int[] sortedArr = selectionSortPrinted(arr);
+        selectionSort(arr);
+        //selectionSortPrinted(arr);
 
         //Print out sorted Array
         System.out.print("Sorted Array: ");
-        for (int i = 0; i < sortedArr.length; i++) {
-            System.out.print(sortedArr[i] + " ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
     }
@@ -27,7 +27,7 @@ public class SelectionSort {
      * Sorts an int array using selection sort (Low to high).
      * @param arr
      */
-    public static int[] selectionSort(int[] arr) {
+    public static void selectionSort(int[] arr) {
         //Iterate through entire array
         for (int i = 0; i < arr.length; i++) {
             //Initialize and set a minimum index to first element of unsorted part
@@ -48,7 +48,6 @@ public class SelectionSort {
                 arr[minIndex] = temp;
             }
         }
-        return arr;
     }
 
     /**
@@ -56,7 +55,7 @@ public class SelectionSort {
      * Prints it broken up.
      * @param arr
      */
-    public static int[] selectionSortPrinted(int[] arr) {
+    public static void selectionSortPrinted(int[] arr) {
         //Iterate through entire array
         for (int i = 0; i < arr.length; i++) {
             //Print out currents
@@ -100,7 +99,5 @@ public class SelectionSort {
                 arr[minIndex] = temp;
             }
         }
-
-        return arr;
     }
 }
